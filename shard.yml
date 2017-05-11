@@ -1,0 +1,17 @@
+name: amber_demo
+version: 0.1.0
+
+authors:
+  - Amber - Crystal Framework
+
+crystal: 0.22.0
+
+license: MIT
+
+dependencies:
+  amber:
+    github: Amber-Crystal/amber 
+  kemalyst-model:
+    github: drujensen/kemalyst-model
+  mysql:
+    github: crystal-lang/crystal-mysql
