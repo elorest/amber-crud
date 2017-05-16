@@ -60,7 +60,7 @@ class PostController < Amber::Controller::Base
     end
   end
 
-  def delete
+  def destroy
     if post = Post.find params["id"]
       post.destroy
     else
