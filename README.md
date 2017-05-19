@@ -7,7 +7,7 @@ Create `amber_blog_development` table in mysql for now.
 ```mysql
 CREATE TABLE posts (
   id BIGINT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  name VARCHAR(255),
+  title VARCHAR(255),
   content TEXT,
   created_at TIMESTAMP NULL,
   updated_at TIMESTAMP NULL
