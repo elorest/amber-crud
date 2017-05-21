@@ -1,6 +1,4 @@
-## Static Site Example
-
-Build the project
+## Amber Blog
 
 Create `amber_blog_development` table in mysql for now.
 
@@ -14,15 +12,12 @@ CREATE TABLE posts (
 );
 ```
 
+Update dependencies and run.
 ```crystal
 crystal deps update
-crystal build --release ./examples/demo.cr
-```
-Run your new Amber server
-```crystal
-./demo.cr
+crystal src/demo.cr
 ```
 Visit
 ```crystal
-http://localhost:4000/index.html
+http://localhost:4000/posts
 ```

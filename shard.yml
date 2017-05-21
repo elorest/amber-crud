@@ -11,7 +11,7 @@ license: MIT
 dependencies:
   amber:
     github: Amber-Crystal/amber 
-  kemalyst-model:
-    github: drujensen/kemalyst-model
+  granite_orm:
+    github: kemalyst/granite-orm
   mysql:
     github: crystal-lang/crystal-mysql
