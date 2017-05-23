@@ -10,13 +10,12 @@ require "./**"
 require "./*"
 require "../config/*"
 
-MY_APP_SERVER = Amber::Server.instance
 
 # This line represents how you will define your application configuration.
-MY_APP_SERVER.config do |app|
+Amber::Server.instance.config do |app|
   # Server options
   app_path = __FILE__          # Do not change unless you understand what you are doing.
-  app.name = "Hello World App" # A descriptive name for your app
+  app.name = "Five minute blog." # A descriptive name for your app
   app.port = 4000              # Port you wish your app to run
   app.env = "development".colorize(:yellow).to_s
   app.log = ::Logger.new(STDOUT)
@@ -58,4 +57,4 @@ MY_APP_SERVER.config do |app|
 end
 
 # Run the server
-MY_APP_SERVER.run
+Amber::Server.instance.run
